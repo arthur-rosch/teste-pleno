@@ -1,12 +1,12 @@
 import { z } from 'zod';
 import { FC, useEffect } from 'react';
-import { Product } from '@/app/types';
+import { Product } from '../../types';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
-import { cardVariants } from '@/app/animations';
+import { cardVariants } from '../../animations';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { updateProduct } from '@/app/services/update-product';
-import { CustomModal, Button, Input, toastError, toastSuccess } from '@/app/components';
+import { updateProduct } from '../../services/update-product';
+import { CustomModal, Button, Input, toastError, toastSuccess } from '../../components';
 
 const productSchema = z.object({
   title: z.string().min(1, 'Título é obrigatório'),

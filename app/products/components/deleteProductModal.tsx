@@ -1,9 +1,9 @@
 import { type FC } from 'react';
 import { motion } from 'framer-motion';
-import { Product } from '@/app/types';
-import { cardVariants } from '@/app/animations';
-import { deleteProduct } from '@/app/services/delete-product';
-import { CustomModal, Button, toastSuccess, toastError } from '@/app/components'; // Importar o toastSuccess
+import { Product } from '../../types';
+import { cardVariants } from '../../animations';
+import { deleteProduct } from '../../services/delete-product';
+import { CustomModal, Button, toastSuccess, toastError } from '../../components'; // Importar o toastSuccess
 
 interface DeleteProductModalProps {
   product: Product;

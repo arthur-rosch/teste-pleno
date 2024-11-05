@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { listItensDelay } from '../animations';
-import { Button, Input, toastSuccess } from '@/app/components';
+import { Button, Input, toastSuccess } from '../components';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 

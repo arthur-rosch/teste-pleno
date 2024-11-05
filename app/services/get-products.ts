@@ -1,4 +1,4 @@
-import { Product } from '@/app/types';
+import { Product } from '../types';
 
 interface ProductResponse {
   products: Product[];

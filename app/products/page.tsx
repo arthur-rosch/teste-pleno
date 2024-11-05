@@ -1,12 +1,12 @@
 'use client'
 
-import { Product } from '@/app/types';
+import { Product } from '../types';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { ProductTable } from './components';
-import { getProducts } from '@/app/services/get-products';
+import { getProducts } from '../services/get-products';
 import { cardVariants, listItensDelay } from '../animations';
-import { Button, Header, Input, Sidebar } from '@/app/components';
+import { Button, Header, Input, Sidebar } from '../components';
 import { CreateProductModal } from './components/createProductModal';
 import { useRouter } from 'next/navigation';
 

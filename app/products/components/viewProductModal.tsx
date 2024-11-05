@@ -1,8 +1,8 @@
 import { type FC } from 'react';
 import { motion } from 'framer-motion';
-import { cardVariants } from '@/app/animations';
-import { CustomModal, Button, Input } from '@/app/components';
-import { Product } from '@/app/types';
+import { cardVariants } from '../../animations';
+import { CustomModal, Button, Input } from '../../components';
+import { Product } from '../../types';
 
 interface ViewProductModalProps {
   product: Product;

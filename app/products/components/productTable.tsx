@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
-import { Product } from '@/app/types';
+import { Product } from '../../types';
 import { motion } from 'framer-motion';
-import { Button } from '@/app/components';
-import { listItensDelay } from '@/app/animations';
+import { Button } from '../../components';
+import { listItensDelay } from '../../animations';
 import { ViewProductModal, EditProductModal, DeleteProductModal } from './'
 import {
   Table,

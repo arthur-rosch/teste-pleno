@@ -3,10 +3,10 @@ import { FC } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { createProduct } from '@/app/services/create-product';
-import { CustomModal, Button, Input, toastError, toastSuccess } from '@/app/components';
-import { Product } from '@/app/types';
-import { cardVariants } from '@/app/animations';
+import { createProduct } from '../../services/create-product';
+import { CustomModal, Button, Input, toastError, toastSuccess } from '../../components';
+import { Product } from '../../types';
+import { cardVariants } from '../../animations';
 
 const productSchema = z.object({
   title: z.string().min(1, 'Título é obrigatório'),
